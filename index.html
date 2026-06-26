@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detailing in Cedar Rapids & Iowa City | Krally's Detailing</title>
+    <meta name="description" content="Krally's Detailing — professional car detailing serving Cedar Rapids, Iowa City, and The Corridor. Exterior detail, interior detail, paint correction & ceramic coating. Get a free quote today.">
+    <meta property="og:title" content="Car Detailing in Cedar Rapids & Iowa City | Krally's Detailing">
+    <meta property="og:description" content="Professional car detailing serving Cedar Rapids, Iowa City, and The Corridor. Paint correction, ceramic coating, interior & exterior detail. Book your free quote.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.krallysdetailing.com">
+    <meta name="geo.region" content="US-IA">
+    <meta name="geo.placename" content="Cedar Rapids, Iowa">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Krally's Detailing",
+      "description": "Professional car detailing services serving Cedar Rapids, Iowa City, and The Corridor area of Iowa. Specializing in exterior detail, interior detail, paint correction, and ceramic coating.",
+      "url": "https://www.krallysdetailing.com",
+      "telephone": "+13193826520",
+      "email": "carterkrall@gmail.com",
+      "founder": { "@type": "Person", "name": "Carter Krall" },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Venmo",
+      "areaServed": [
+        { "@type": "City", "name": "Cedar Rapids", "containedInPlace": { "@type": "State", "name": "Iowa" } },
+        { "@type": "City", "name": "Iowa City", "containedInPlace": { "@type": "State", "name": "Iowa" } },
+        { "@type": "City", "name": "North Liberty", "containedInPlace": { "@type": "State", "name": "Iowa" } },
+        { "@type": "City", "name": "Coralville", "containedInPlace": { "@type": "State", "name": "Iowa" } },
+        { "@type": "City", "name": "Marion", "containedInPlace": { "@type": "State", "name": "Iowa" } }
+      ],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "18:00" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/KrallysDetailing"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Car Detailing Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Detail", "description": "Hand wash, clay bar, paint decontamination, tire dressing, exterior glass cleaning." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Detail", "description": "Deep vacuum, steam cleaning, leather conditioning, dashboard detailing, odor elimination." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paint Correction", "description": "Machine polishing to remove swirl marks, water spots, and light scratches." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic Coating", "description": "Nano-ceramic protection repelling water, UV rays, and contaminants for up to 3 years." } }
+        ]
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init({ publicKey: 'y4Sz39EVRexVd2kSt' });</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg:           #0a0a0a;
+            --bg-2:         #0f0f0f;
+            --bg-card:      #141414;
+            --accent:       #e31c3d;
+            --accent-h:     #ff2a4d;
+            --accent-dim:   rgba(227,28,61,0.12);
+            --accent-mid:   rgba(227,28,61,0.35);
+            --text-1:       #ffffff;
+            --text-2:       #9ca3af;
+            --text-3:       #555;
+            --border:       rgba(255,255,255,0.08);
+            --radius:       8px;
+            --radius-lg:    16px;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg);
+            color: var(--text-1);
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; display: block; }
+        a   { color: inherit; text-decoration: none; }
+
+        /* ── UTILS ─────────────────────────────────── */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-family: 'Barlow', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(44px, 6vw, 72px);
+            line-height: 0.95;
+            letter-spacing: 0.02em;
+            color: var(--text-1);
+        }
+
+        .section-title .red { color: var(--accent); }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 15px 34px;
+            border-radius: var(--radius);
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s;
+        }
+
+        .btn:hover { transform: translateY(-2px); }
+
+        .btn-red {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-red:hover {
+            background: var(--accent-h);
+            box-shadow: 0 8px 28px rgba(227,28,61,0.45);
+        }
+
+        .nav-cta-btn {
+            font-size: 14px;
+            letter-spacing: 0.14em;
+            padding: 16px 38px;
+            box-shadow: 0 0 14px rgba(227,28,61,0.6), 0 0 32px rgba(227,28,61,0.3), 0 0 60px rgba(227,28,61,0.15);
+            animation: navGlow 2.4s ease-in-out infinite;
+        }
+
+        .nav-cta-btn:hover {
+            box-shadow: 0 0 22px rgba(227,28,61,0.9), 0 0 50px rgba(227,28,61,0.55), 0 0 80px rgba(227,28,61,0.25), 0 8px 28px rgba(227,28,61,0.4);
+            animation: none;
+        }
+
+        @keyframes navGlow {
+            0%, 100% { box-shadow: 0 0 14px rgba(227,28,61,0.6), 0 0 32px rgba(227,28,61,0.3),  0 0 60px rgba(227,28,61,0.15); }
+            50%       { box-shadow: 0 0 22px rgba(227,28,61,0.85), 0 0 52px rgba(227,28,61,0.45), 0 0 80px rgba(227,28,61,0.22); }
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-1);
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--accent);
+        }
+
+        .btn-white:hover {
+            box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+        }
+
+        /* ── NAV ───────────────────────────────────── */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 200;
+            background: rgba(0,0,0,0.55);
+            transition: background 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+        }
+
+        .nav.scrolled {
+            background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(18px);
+            box-shadow: 0 1px 0 var(--border);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 74px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .nav-logo img {
+            height: 98px;
+            width: auto;
+            object-fit: contain;
+            mix-blend-mode: lighten;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Barlow', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-2);
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: #fff; }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #fff;
+            border-radius: 2px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        /* Mobile overlay */
+        .mob-menu {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(8,8,8,0.98);
+            z-index: 190;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 36px;
+        }
+
+        .mob-menu.open { display: flex; }
+
+        .mob-menu a {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+            letter-spacing: 0.04em;
+            color: #fff;
+            transition: color 0.2s;
+        }
+
+        .mob-menu a:hover { color: var(--accent); }
+
+        /* ── HERO ──────────────────────────────────── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(105deg, rgba(10,10,10,1) 42%, rgba(10,10,10,0.55) 68%, rgba(10,10,10,0.82) 100%),
+                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=80') center/cover no-repeat;
+        }
+
+        /* subtle grid lines */
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+            background-size: 64px 64px;
+        }
+
+        /* red atmospheric glow */
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 55vw;
+            height: 80vh;
+            background: radial-gradient(ellipse at right center, rgba(227,28,61,0.14) 0%, transparent 65%);
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        /* diagonal red accent bar */
+        .hero-slash {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: var(--accent);
+            transform: skewX(-12deg);
+            transform-origin: top;
+            box-shadow: 0 0 40px rgba(227,28,61,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: clamp(90px, 12vh, 130px) 24px clamp(110px, 13vh, 140px);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent-dim);
+            border: 1px solid var(--accent-mid);
+            border-radius: 100px;
+            padding: 7px 18px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: clamp(12px, 2vh, 28px);
+        }
+
+        .hero-badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.3; }
+        }
+
+        .hero-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(52px, min(9vw, 11vh), 118px);
+            line-height: 0.88;
+            letter-spacing: 0.02em;
+            color: #fff;
+            margin-bottom: clamp(12px, 2vh, 28px);
+            max-width: 820px;
+        }
+
+        .hero-title .red { color: var(--accent); }
+
+        .hero-sub {
+            font-size: 17px;
+            color: var(--text-2);
+            max-width: 520px;
+            line-height: 1.65;
+            margin-bottom: clamp(18px, 3.5vh, 44px);
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: clamp(24px, 5vh, 72px);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 0;
+        }
+
+        .hero-stat {
+            padding: 0 40px 0 0;
+            border-right: 1px solid var(--border);
+            margin-right: 40px;
+        }
+
+        .hero-stat:last-child {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        .hero-stat-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 44px;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .hero-stat-num span { color: var(--accent); }
+
+        .hero-stat-lbl {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin-top: 4px;
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 36px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            z-index: 2;
+        }
+
+        .scroll-hint span {
+            font-size: 10px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-3);
+        }
+
+        .scroll-mouse {
+            width: 22px;
+            height: 34px;
+            border: 2px solid var(--text-3);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .scroll-mouse::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 7px;
+            background: var(--text-3);
+            border-radius: 2px;
+            animation: scrollDown 1.8s ease-in-out infinite;
+        }
+
+        @keyframes scrollDown {
+            0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+        }
+
+        /* ── SERVICES ──────────────────────────────── */
+        .services {
+            padding: clamp(80px, 10vw, 130px) 0;
+            background: var(--bg-2);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header .section-sub {
+            color: var(--text-2);
+            font-size: 16px;
+            max-width: 480px;
+            margin: 16px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .svc-card {
+            background: var(--bg-card);
+            padding: 40px 32px;
+            transition: background 0.25s;
+        }
+
+        .svc-card:hover { background: #1c1c1c; }
+
+        .svc-card:hover .svc-icon {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .svc-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--accent-dim);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            margin-bottom: 24px;
+            transition: background 0.25s, color 0.25s;
+        }
+
+        .svc-name {
+            font-family: 'Barlow', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-1);
+            margin-bottom: 10px;
+        }
+
+        .svc-desc {
+            font-size: 14px;
+            color: var(--text-2);
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+
+        .svc-price {
+            font-family: 'Barlow', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: var(--accent);
+        }
+
+        /* ── ABOUT ─────────────────────────────────── */
+        .about {
+            padding: clamp(80px, 10vw, 130px) 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-img-wrap {
+            position: relative;
+        }
+
+        .about-img-wrap img {
+            width: 100%;
+            height: 580px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: 28px;
+            right: -20px;
+            background: var(--accent);
+            padding: 20px 28px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: 0 16px 40px rgba(227,28,61,0.4);
+        }
+
+        .about-badge-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 52px;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .about-badge-lbl {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.75);
+            margin-top: 2px;
+        }
+
+        .about-body {
+            font-size: 16px;
+            color: var(--text-2);
+            line-height: 1.7;
+            margin: 22px 0 36px;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 48px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .feature-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent-dim);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .feature-text strong {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-1);
+            margin-bottom: 2px;
+        }
+
+        .feature-text span {
+            font-size: 14px;
+            color: var(--text-2);
+        }
+
+        .about-nums {
+            display: flex;
+            gap: 40px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .about-num .num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 50px;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .about-num .num em { color: var(--accent); font-style: normal; }
+
+        .about-num .lbl {
+            font-size: 12px;
+            color: var(--text-3);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* ── BEFORE & AFTER ────────────────────────── */
+        .ba-section {
+            padding: clamp(80px, 10vw, 130px) 0;
+            background: var(--bg-2);
+        }
+
+        .ba-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .ba-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .ba-slider {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+            cursor: col-resize;
+            user-select: none;
+            touch-action: none;
+        }
+
+        .ba-before, .ba-after {
+            position: absolute;
+            inset: 0;
+        }
+
+        .ba-before img, .ba-after img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ba-after {
+            clip-path: inset(0 50% 0 0);
+        }
+
+        .ba-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background: #fff;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .ba-handle::after {
+            content: '◁ ▷';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 44px;
+            height: 44px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #111;
+            font-weight: 700;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+            line-height: 44px;
+            text-align: center;
+        }
+
+        .ba-labels {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 16px;
+            background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+            display: flex;
+            justify-content: space-between;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .ba-lbl {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        .ba-lbl.b { color: #aaa; }
+        .ba-lbl.a { color: var(--accent); }
+
+        .ba-caption {
+            padding: 16px 20px;
+            background: var(--bg-card);
+            font-family: 'Barlow', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-1);
+        }
+
+        /* ── REVIEWS ───────────────────────────────── */
+        .reviews {
+            padding: clamp(80px, 10vw, 130px) 0;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            transition: border-color 0.25s, transform 0.25s;
+        }
+
+        .review-card:hover {
+            border-color: var(--accent-mid);
+            transform: translateY(-4px);
+        }
+
+        .stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 18px;
+            color: #f59e0b;
+        }
+
+        .review-body {
+            font-size: 15px;
+            color: var(--text-2);
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: 24px;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-dim);
+            border: 2px solid var(--accent-mid);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Barlow', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .review-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-1);
+        }
+
+        .review-src {
+            font-size: 12px;
+            color: var(--text-3);
+            margin-top: 2px;
+        }
+
+        /* ── CTA BANNER ────────────────────────────── */
+        .cta-band {
+            background: var(--accent);
+            padding: clamp(60px, 8vw, 100px) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-band::before {
+            content: "KRALLY'S";
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: min(200px, 20vw);
+            color: rgba(255,255,255,0.07);
+            letter-spacing: 0.02em;
+            pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        .cta-band-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-band-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(40px, 6vw, 72px);
+            line-height: 0.95;
+            color: #fff;
+        }
+
+        .cta-band-sub {
+            font-size: 16px;
+            color: rgba(255,255,255,0.75);
+            margin-top: 10px;
+        }
+
+        /* ── CONTACT ───────────────────────────────── */
+        .contact {
+            padding: clamp(80px, 10vw, 130px) 0;
+            background: var(--bg-2);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            margin-top: 36px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--accent-dim);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .ci-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin-bottom: 3px;
+        }
+
+        .ci-value {
+            font-size: 16px;
+            color: var(--text-1);
+            font-weight: 500;
+        }
+
+        .social-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 44px;
+        }
+
+        .social-btn {
+            width: 44px;
+            height: 44px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-2);
+            transition: border-color 0.2s, background 0.2s, color 0.2s;
+        }
+
+        .social-btn:hover {
+            border-color: var(--accent-mid);
+            background: var(--accent-dim);
+            color: var(--accent);
+        }
+
+        /* Form */
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 24px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .form-section:first-child { border-top: none; padding-top: 0; }
+
+        .form-section-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-row-3 { grid-template-columns: 2fr 1fr 1fr; }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-3);
+        }
+
+        /* Card-style checkboxes and radios */
+        .check-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .check-item:hover {
+            border-color: var(--accent-mid);
+            background: #1c1c1c;
+        }
+
+        .check-item:has(input:checked) {
+            border-color: var(--accent-mid);
+            background: var(--accent-dim);
+        }
+
+        .check-item:has(input:checked) span { color: var(--text-1); }
+
+        .check-item input[type="checkbox"],
+        .check-item input[type="radio"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--accent);
+            cursor: pointer;
+            flex-shrink: 0;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .check-item span {
+            font-size: 14px;
+            color: var(--text-2);
+            line-height: 1.3;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 13px 16px;
+            color: var(--text-1);
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s, background 0.2s;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .form-group select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+
+        .form-group select option { background: #1a1a1a; }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--accent);
+            background: #1b1b1b;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder { color: var(--text-3); }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* ── FOOTER ────────────────────────────────── */
+        .footer {
+            background: #000;
+            border-top: 1px solid var(--border);
+            padding: 64px 0 32px;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 32px;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 18px;
+        }
+
+        .footer-logo p {
+            font-size: 14px;
+            color: var(--text-3);
+            line-height: 1.65;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-family: 'Barlow', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--text-1);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            color: var(--text-3);
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-copy {
+            font-size: 13px;
+            color: var(--text-3);
+        }
+
+        /* ── FADE ANIMATIONS ───────────────────────── */
+        .fade {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+
+        .fade.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade:nth-child(2) { transition-delay: 0.08s; }
+        .fade:nth-child(3) { transition-delay: 0.16s; }
+        .fade:nth-child(4) { transition-delay: 0.24s; }
+        .fade:nth-child(5) { transition-delay: 0.32s; }
+        .fade:nth-child(6) { transition-delay: 0.40s; }
+
+        /* ── RESPONSIVE ────────────────────────────── */
+        @media (max-width: 1024px) {
+            .services-grid    { grid-template-columns: repeat(2, 1fr); }
+            .ba-grid          { grid-template-columns: repeat(2, 1fr); }
+            .reviews-grid     { grid-template-columns: repeat(2, 1fr); }
+            .footer-top       { grid-template-columns: 1fr 1fr; gap: 40px; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta-btn { display: none; }
+            .hamburger { display: flex; }
+
+            .about-grid    { grid-template-columns: 1fr; gap: 48px; }
+            .about-badge   { right: 16px; }
+            .contact-grid  { grid-template-columns: 1fr; gap: 48px; }
+            .form-row      { grid-template-columns: 1fr; }
+            .form-row-3    { grid-template-columns: 1fr; }
+            .check-grid    { grid-template-columns: 1fr; }
+            .footer-top    { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+
+            .cta-band-inner { flex-direction: column; text-align: center; }
+
+            .hero-stats { flex-direction: column; gap: 20px; }
+            .hero-stat  { padding-right: 0; border-right: none; margin-right: 0; border-left: 2px solid var(--accent); padding-left: 16px; }
+        }
+
+        @media (max-width: 640px) {
+            .services-grid { grid-template-columns: 1fr; }
+            .ba-grid       { grid-template-columns: 1fr; }
+            .reviews-grid  { grid-template-columns: 1fr; }
+            .hero-actions  { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── MOBILE OVERLAY ─────────────────────────────── -->
+<div class="mob-menu" id="mobMenu">
+    <a href="#services"  onclick="closeMob()">Services</a>
+    <a href="#about"     onclick="closeMob()">About</a>
+    <a href="#reviews"   onclick="closeMob()">Reviews</a>
+    <a href="#contact"   onclick="closeMob()">Contact</a>
+    <a href="#contact"   onclick="closeMob()" class="btn btn-red" style="margin-top:8px">Get a Free Quote</a>
+</div>
+
+<!-- ── NAV ───────────────────────────────────────── -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Krally's Detailing home">
+            <img src="Brand Assets/Adobe Express - file.png" alt="Krally's Detailing logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-red nav-cta-btn">Get a Free Quote</a>
+        <button class="hamburger" onclick="toggleMob()" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────── -->
+<section class="hero" id="home" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-slash" aria-hidden="true"></div>
+
+    <div class="hero-content">
+        <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            Cedar Rapids &amp; Iowa City's Auto Detailing
+        </div>
+        <h1 class="hero-title">
+            YOUR CAR<br>
+            DESERVES<br>
+            THE <span class="red">BEST.</span>
+        </h1>
+        <p class="hero-sub">Serving Cedar Rapids, Iowa City, and The Corridor. Professional detailing that restores, protects, and transforms your vehicle — I treat every car like it's my own.</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-red nav-cta-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                Book Now
+            </a>
+            <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="hero-stat-num">500<span>+</span></div>
+                <div class="hero-stat-lbl">Cars Detailed</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">5<span>★</span></div>
+                <div class="hero-stat-lbl">Average Rating</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">100<span>%</span></div>
+                <div class="hero-stat-lbl">Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-mouse"></div>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ── SERVICES ───────────────────────────────────── -->
+<section class="services" id="services" aria-labelledby="svc-title">
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">What I Offer</span>
+            <h2 class="section-title" id="svc-title">MY <span class="red">SERVICES</span></h2>
+            <p class="section-sub">From quick exterior washes to full paint corrections — a package for every vehicle and every budget.</p>
+        </div>
+        <div class="services-grid">
+            <div class="svc-card fade">
+                <div class="svc-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="svc-name">Exterior Detail</div>
+                <div class="svc-desc">Hand wash, clay bar treatment, paint decontamination, tire dressing, and exterior glass cleaning. Your paint will gleam.</div>
+                <div class="svc-price">Starting at $75</div>
+            </div>
+            <div class="svc-card fade">
+                <div class="svc-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <div class="svc-name">Interior Detail</div>
+                <div class="svc-desc">Deep vacuum, steam cleaning, leather conditioning, dashboard detailing, and odor elimination. Fresh-cabin feeling.</div>
+                <div class="svc-price">Starting at $100</div>
+            </div>
+            <div class="svc-card fade">
+                <div class="svc-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="svc-name">Full Detail Package</div>
+                <div class="svc-desc">The complete treatment — interior and exterior combined for a total transformation. My most popular package.</div>
+                <div class="svc-price">Starting at $150</div>
+            </div>
+            <div class="svc-card fade">
+                <div class="svc-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                </div>
+                <div class="svc-name">Paint Correction</div>
+                <div class="svc-desc">Remove swirl marks, water spots, and light scratches. Machine polishing restores depth and clarity to your paint.</div>
+                <div class="svc-price">Starting at $250</div>
+            </div>
+            <div class="svc-card fade">
+                <div class="svc-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="svc-name">Ceramic Coating</div>
+                <div class="svc-desc">Long-lasting nano-ceramic protection repelling water, UV rays, and contaminants. Up to 3 years of protection.</div>
+                <div class="svc-price">Starting at $500</div>
+            </div>
+            <div class="svc-card fade">
+                <div class="svc-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <div class="svc-name">Engine Bay Cleaning</div>
+                <div class="svc-desc">Safe degreasing and detailing of the engine bay. Removes grime buildup, leaves your engine looking showroom-ready.</div>
+                <div class="svc-price">Starting at $80</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────── -->
+<section class="about" id="about" aria-labelledby="about-title">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-img-wrap">
+                <img
+                    src="Brand Assets/692f502cb140e0281a14e2f3_Coach Carter Krall.webp"
+                    alt="Carter Krall — Owner of Krally's Detailing"
+                    loading="lazy"
+                    style="background: var(--bg-card);"
+                >
+                <div class="about-badge">
+                    <div class="about-badge-num">5★</div>
+                    <div class="about-badge-lbl">Facebook Rated</div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="eyebrow">Why Choose Me</span>
+                <h2 class="section-title" id="about-title">I RAISE<br>THE <span class="red">STANDARD.</span></h2>
+                <p class="about-body">At Krally's Detailing, I'm passionate about cars and obsessed with perfection. Based in The Corridor — serving Cedar Rapids, Iowa City, and everywhere in between — every vehicle that comes through my hands receives the same meticulous care, whether it's a daily driver or a weekend showpiece.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Premium Products Only</strong>
+                            <span>Professional-grade, eco-friendly products that protect your paint and finish.</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Obsessive Attention to Detail</strong>
+                            <span>No corner cut, no spot missed. I detail every inch with care.</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Satisfaction Guaranteed</strong>
+                            <span>I'm not done until you're completely satisfied. Your car, my pride.</span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        </div>
+                        <div class="feature-text">
+                            <strong>Flexible & Convenient</strong>
+                            <span>Mobile detailing available — I come to you at home or work, on your schedule.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-nums">
+                    <div class="about-num">
+                        <div class="num">500<em>+</em></div>
+                        <div class="lbl">Vehicles Detailed</div>
+                    </div>
+                    <div class="about-num">
+                        <div class="num">100<em>%</em></div>
+                        <div class="lbl">Satisfaction Rate</div>
+                    </div>
+                    <div class="about-num">
+                        <div class="num">5<em>★</em></div>
+                        <div class="lbl">Avg. Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── BEFORE & AFTER ─────────────────────────────── -->
+<section class="ba-section" id="gallery" aria-labelledby="ba-title">
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">The Krally's Difference</span>
+            <h2 class="section-title" id="ba-title">MY <span class="red">RESULTS</span></h2>
+        </div>
+        <div class="ba-grid">
+            <div class="ba-card fade">
+                <div style="height:280px;overflow:hidden;">
+                    <img src="Brand Assets/472547677_18034489493384949_1968101298558806596_n.jpg" alt="Exterior detail result" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="ba-caption">Exterior Detail</div>
+            </div>
+            <div class="ba-card fade">
+                <div class="ba-slider" data-slider>
+                    <div class="ba-before">
+                        <img src="Brand Assets/int after.jpg" alt="Before interior detail — dirty seats" loading="lazy">
+                    </div>
+                    <div class="ba-after">
+                        <img src="Brand Assets/intbefore.jpg" alt="After interior detail — clean cabin" loading="lazy">
+                    </div>
+                    <div class="ba-handle" aria-hidden="true"></div>
+                    <div class="ba-labels" aria-hidden="true">
+                        <span class="ba-lbl b">Before</span>
+                        <span class="ba-lbl a">After</span>
+                    </div>
+                </div>
+                <div class="ba-caption">Interior Deep Clean</div>
+            </div>
+            <div class="ba-card fade">
+                <div class="ba-slider" data-slider>
+                    <div class="ba-before">
+                        <img src="Brand Assets/pcafter.png" alt="Before paint correction — dull scratched paint" loading="lazy">
+                    </div>
+                    <div class="ba-after">
+                        <img src="Brand Assets/pcbefore.png" alt="After paint correction — mirror-like gloss" loading="lazy">
+                    </div>
+                    <div class="ba-handle" aria-hidden="true"></div>
+                    <div class="ba-labels" aria-hidden="true">
+                        <span class="ba-lbl b">Before</span>
+                        <span class="ba-lbl a">After</span>
+                    </div>
+                </div>
+                <div class="ba-caption">Paint Correction</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── REVIEWS ────────────────────────────────────── -->
+<section class="reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">What My Clients Say</span>
+            <h2 class="section-title" id="reviews-title">5-STAR <span class="red">REVIEWS</span></h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card fade">
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="review-body">"I had a great experience with a paint correction and 7 year finish.  Carter communicated clearly and explained the options to me.  He was helpful in finding a date for the work that was convenient to us both.  And in the end the truck looks like dynamite, even for an all black vehicle which presents challenges.  I highly recommend."</p>
+                <div class="review-author">
+                    <div class="avatar" aria-hidden="true">JM</div>
+                    <div>
+                        <div class="review-name">Leighton S.</div>
+                        <div class="review-src">★ Facebook Review</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade">
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="review-body">"Carter did an amazing job on my SUV! My car never looked better! He was great at communicating expectations and the pricing was so reasonable. He pays great attention to detail and I will definitely have him detail my car again!"</p>
+                <div class="review-author">
+                    <div class="avatar" aria-hidden="true">SR</div>
+                    <div>
+                        <div class="review-name">Martha R.</div>
+                        <div class="review-src">★ Google Review</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade">
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="review-body">"Krally was very knowledgeable about the products he uses and what to do after for care. He was quick to respond to all of my messages and questions. Krally is extremely flexible. He can come to your location or you can bring your vehicle to him. My vehicle looked amazing when we picked it up and continues to stay clean and easy to clean. His prices were very competitive. I would recommend to anyone who wants to keep their vehicle in top condition."</p>
+                <div class="review-author">
+                    <div class="avatar" aria-hidden="true">DK</div>
+                    <div>
+                        <div class="review-name">Erik J.</div>
+                        <div class="review-src">★ Facebook Review</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex;justify-content:center;gap:16px;margin-top:48px;flex-wrap:wrap;">
+            <a href="https://www.facebook.com/KrallysDetailing/reviews/?id=100063654874893&sk=reviews" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="gap:10px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                See My Facebook Reviews
+            </a>
+            <a href="https://www.google.com/search?num=10&sca_esv=efe3fea331ef71db&rlz=1C1CHBF_enUS990US990&sxsrf=APpeQnvlnltP50Ifs1LRsgi24hxQjyVhkQ:1782328680444&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_7x_rUsdIDjrWcfFq0XtGMDtabw9pNXPh-jDnKwyNPS6czLnLmynzWfchC6LFfXT2yHB1ahqd69_q3ry6v48O0_b_m40_cbASILKh1ngoq2pNGGslw%3D%3D&q=Krally%E2%80%99s+Auto+Detailing+Reviews&sa=X&ved=2ahUKEwiGt_vey6CVAxV76BoGHUHQAO8Q0bkNegQILRAI&biw=2133&bih=1012&dpr=0.9" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="gap:10px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                See My Google Reviews
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ── CTA BAND ───────────────────────────────────── -->
+<section class="cta-band" aria-label="Call to action">
+    <div class="container">
+        <div class="cta-band-inner">
+            <div>
+                <div class="cta-band-title">READY FOR A<br>TRANSFORMATION?</div>
+                <div class="cta-band-sub">Get a free quote — no commitment, no pressure.</div>
+            </div>
+            <a href="#contact" class="btn btn-white">
+                Get Your Free Quote
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────── -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+        <div class="contact-grid">
+            <div>
+                <span class="eyebrow">Get In Touch</span>
+                <h2 class="section-title" id="contact-title">BOOK YOUR<br><span class="red">DETAIL</span></h2>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <a href="tel:+13193826520" class="contact-icon" aria-label="Call (319) 382-6520" title="Call (319) 382-6520" style="cursor:pointer;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--accent)';this.style.color='#fff'" onmouseout="this.style.background='var(--accent-dim)';this.style.color='var(--accent)'">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.36 2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                        <div>
+                            <div class="ci-label">Call or Text</div>
+                            <div class="ci-value"><a href="tel:+13193826520" style="color:inherit;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='inherit'">(319) 382-6520</a> or Message me on Facebook</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:carterkrall@gmail.com" class="contact-icon" aria-label="Email carterkrall@gmail.com" title="Send an email" style="cursor:pointer;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='var(--accent)';this.style.color='#fff'" onmouseout="this.style.background='var(--accent-dim)';this.style.color='var(--accent)'">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                        <div>
+                            <div class="ci-label">Email</div>
+                            <div class="ci-value"><a href="mailto:carterkrall@gmail.com" style="color:inherit;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='inherit'">carterkrall@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <div class="ci-label">Hours</div>
+                            <div class="ci-value">Monday – Saturday &nbsp;8AM – 6PM</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <div class="ci-label">Service Area</div>
+                            <div class="ci-value">Cedar Rapids, Iowa City &amp; The Corridor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-row">
+                    <a href="https://www.facebook.com/KrallysDetailing" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Krally's Detailing on Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://share.google/VyqLUjhtZgWKOEDWM" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Krally's Detailing on Google">
+                        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                    </a>
+                    <a href="https://www.krallysdetailing.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Krally's Detailing website">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <form class="form" id="quoteForm" novalidate>
+
+                <!-- CONTACT DETAILS -->
+                <div class="form-section">
+                    <div class="form-section-label">Contact Details</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-fname">First Name</label>
+                            <input type="text" id="f-fname" name="first_name" placeholder="John" required autocomplete="given-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-lname">Last Name</label>
+                            <input type="text" id="f-lname" name="last_name" placeholder="Smith" required autocomplete="family-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-phone">Phone Number</label>
+                            <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-email">Email Address</label>
+                            <input type="email" id="f-email" name="email" placeholder="john@example.com" required autocomplete="email">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERVICE LOCATION -->
+                <div class="form-section">
+                    <div class="form-section-label">Service Location</div>
+                    <div class="form-group">
+                        <label for="f-address">Street Address</label>
+                        <input type="text" id="f-address" name="address" placeholder="123 Main St" autocomplete="street-address">
+                    </div>
+                    <div class="form-row form-row-3">
+                        <div class="form-group">
+                            <label for="f-city">City</label>
+                            <input type="text" id="f-city" name="city" placeholder="Cedar Rapids" autocomplete="address-level2">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-state">State</label>
+                            <input type="text" id="f-state" name="state" placeholder="IA" autocomplete="address-level1" maxlength="2">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-zip">ZIP</label>
+                            <input type="text" id="f-zip" name="zip" placeholder="52401" autocomplete="postal-code" maxlength="5">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERVICE DETAILS -->
+                <div class="form-section">
+                    <div class="form-section-label">Service Details</div>
+                    <div class="form-group">
+                        <label>Services Requested <span style="color:var(--accent);letter-spacing:0">*</span></label>
+                        <div class="check-grid">
+                            <label class="check-item">
+                                <input type="checkbox" name="svc_exterior" value="Exterior Detail">
+                                <span>Exterior Detail</span>
+                            </label>
+                            <label class="check-item">
+                                <input type="checkbox" name="svc_interior" value="Interior Detail">
+                                <span>Interior Detail</span>
+                            </label>
+                            <label class="check-item">
+                                <input type="checkbox" name="svc_full" value="Full Detail Package">
+                                <span>Full Detail Package</span>
+                            </label>
+                            <label class="check-item">
+                                <input type="checkbox" name="svc_paint" value="Paint Correction">
+                                <span>Paint Correction</span>
+                            </label>
+                            <label class="check-item">
+                                <input type="checkbox" name="svc_ceramic" value="Ceramic Coating">
+                                <span>Ceramic Coating</span>
+                            </label>
+                            <label class="check-item">
+                                <input type="checkbox" name="svc_engine" value="Engine Bay Cleaning">
+                                <span>Engine Bay Cleaning</span>
+                            </label>
+                        </div>
+                        <input type="hidden" id="f-services" name="services" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-vehicle">Your Vehicle (Year, Make, Model, Color)</label>
+                        <input type="text" id="f-vehicle" name="vehicle" placeholder="e.g. 2021 Honda Accord — Black">
+                    </div>
+                </div>
+
+                <!-- QUICK QUESTIONS -->
+                <div class="form-section">
+                    <div class="form-section-label">A Few Quick Questions</div>
+                    <div class="form-group">
+                        <label>Has your vehicle been detailed before?</label>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                            <label class="check-item" style="flex:1;min-width:80px;">
+                                <input type="radio" name="detailed_before" value="Yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="check-item" style="flex:1;min-width:80px;">
+                                <input type="radio" name="detailed_before" value="No">
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>For mobile service — water &amp; electric access at location?</label>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                            <label class="check-item" style="flex:1;min-width:80px;">
+                                <input type="radio" name="water_electric" value="Yes">
+                                <span>Yes</span>
+                            </label>
+                            <label class="check-item" style="flex:1;min-width:80px;">
+                                <input type="radio" name="water_electric" value="No">
+                                <span>No</span>
+                            </label>
+                            <label class="check-item" style="flex:2;min-width:180px;">
+                                <input type="radio" name="water_electric" value="I'll bring my vehicle to you">
+                                <span>I'll bring my vehicle to you</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SCHEDULING & NOTES -->
+                <div class="form-section">
+                    <div class="form-section-label">Scheduling &amp; Notes</div>
+                    <div class="form-group">
+                        <label for="f-timing">When were you hoping to get this done?</label>
+                        <input type="text" id="f-timing" name="timing" placeholder="e.g. This weekend, ASAP, Next week…">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-msg">Additional Notes or Specific Concerns</label>
+                        <textarea id="f-msg" name="message" placeholder="List any specific requests, problem areas, or concerns about your vehicle…"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-red" id="submitBtn" style="justify-content:center;margin-top:8px;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    Send Quote Request
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Brand Assets/426389154_905669488231539_1431594541760015332_n.jpg" alt="Krally's Detailing">
+                <p>Professional car detailing with an obsession for perfection. I make your car look and feel brand new.</p>
+                <p style="margin-top:10px;font-size:13px;color:var(--text-3);">Proudly serving Cedar Rapids, Iowa City, and The Corridor.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Exterior Detail</a></li>
+                    <li><a href="#services">Interior Detail</a></li>
+                    <li><a href="#services">Full Detail Package</a></li>
+                    <li><a href="#services">Paint Correction</a></li>
+                    <li><a href="#services">Ceramic Coating</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.facebook.com/KrallysDetailing" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.krallysdetailing.com" target="_blank" rel="noopener">Website</a></li>
+                    <li><a href="#contact">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2025 Krally's Detailing. All rights reserved.</p>
+            <p class="footer-copy">Crafted for car enthusiasts.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+/* ── NAV SCROLL ───────────────────────────── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+/* ── MOBILE MENU ──────────────────────────── */
+function toggleMob() {
+    const m = document.getElementById('mobMenu');
+    const open = m.classList.toggle('open');
+    document.body.style.overflow = open ? 'hidden' : '';
+    document.querySelector('.hamburger').setAttribute('aria-expanded', open);
+}
+function closeMob() {
+    document.getElementById('mobMenu').classList.remove('open');
+    document.body.style.overflow = '';
+    document.querySelector('.hamburger').setAttribute('aria-expanded', 'false');
+}
+
+/* ── SCROLL FADE-INS ──────────────────────── */
+const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.fade').forEach(el => io.observe(el));
+
+/* ── BEFORE & AFTER SLIDERS ───────────────── */
+document.querySelectorAll('[data-slider]').forEach(slider => {
+    const after  = slider.querySelector('.ba-after');
+    const handle = slider.querySelector('.ba-handle');
+    let active = false;
+
+    function move(x) {
+        const r   = slider.getBoundingClientRect();
+        const pct = Math.min(100, Math.max(0, (x - r.left) / r.width * 100));
+        after.style.clipPath  = `inset(0 ${100 - pct}% 0 0)`;
+        handle.style.left     = pct + '%';
+    }
+
+    slider.addEventListener('mousedown',  e => { active = true; move(e.clientX); });
+    slider.addEventListener('touchstart', e => { active = true; move(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mousemove',  e => { if (active) move(e.clientX); });
+    window.addEventListener('touchmove',  e => { if (active) move(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('mouseup',    () => { active = false; });
+    window.addEventListener('touchend',   () => { active = false; });
+});
+
+/* ── CONTACT FORM ─────────────────────────── */
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const sendIcon = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>`;
+    const checkIcon = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>`;
+
+    /* Collect checked services into the hidden field */
+    const checked = [...this.querySelectorAll('input[name^="svc_"]:checked')].map(cb => cb.value);
+    document.getElementById('f-services').value = checked.length ? checked.join(', ') : 'None selected';
+
+    btn.innerHTML = `${sendIcon} Sending…`;
+    btn.disabled = true;
+
+    emailjs.sendForm('service_4195eqc', 'template_nad5fbl', this)
+        .then(() => {
+            btn.innerHTML = `${checkIcon} Request Sent!`;
+            btn.style.background = '#16a34a';
+            setTimeout(() => {
+                btn.innerHTML = `${sendIcon} Send Quote Request`;
+                btn.style.background = '';
+                btn.disabled = false;
+                this.reset();
+            }, 4000);
+        })
+        .catch((err) => {
+            console.error('EmailJS error:', err);
+            btn.innerHTML = `${sendIcon} Failed — Try Again`;
+            btn.style.background = '#dc2626';
+            btn.disabled = false;
+            setTimeout(() => {
+                btn.innerHTML = `${sendIcon} Send Quote Request`;
+                btn.style.background = '';
+            }, 4000);
+        });
+});
+</script>
+</body>
+</html>
