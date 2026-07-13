@@ -41,10 +41,12 @@
         "@type": "OfferCatalog",
         "name": "Car Detailing Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Detail", "description": "Hand wash, clay bar, paint decontamination, tire dressing, exterior glass cleaning." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Detail", "description": "Deep vacuum, steam cleaning, leather conditioning, dashboard detailing, odor elimination." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paint Correction", "description": "Machine polishing to remove swirl marks, water spots, and light scratches." } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic Coating", "description": "Nano-ceramic protection repelling water, UV rays, and contaminants for up to 3 years." } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mini Detail", "description": "Foam hand wash, tire and wheel cleaning, tires and plastics dressed, 1-2 month ceramic detail spray. Starts at $75." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Signature Detail", "description": "Foam decontamination wash, clay bar treatment, wheels/tires cleaned and dressed, 6-9 month ceramic sealant protection. Starts at $175." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Express Detail", "description": "Interior refresh including full vacuum, wipedown, windows cleaned, and leather/vinyl conditioned. Starts at $100." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reset Detail", "description": "Deep interior clean with full vacuum, wipedown, windows, leather/vinyl conditioning, and upholstery shampooing. Starts at $200." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "2 Year Ceramic Coating", "description": "Full decontamination wash, clay bar treatment, panel prep and application. UV, bug, and water etch protection. Starts at $325." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Armour Pro Quartz 5 Year Ceramic Coating", "description": "Top of the line pro grade ceramic coating with full decontamination wash, clay bar treatment, and panel prep and application. Starts at $800." } }
         ]
       }
     }
@@ -493,9 +495,25 @@
             margin: 16px auto 0;
         }
 
-        .services-grid {
+        .svc-group {
+            margin-bottom: 44px;
+        }
+
+        .svc-group-label {
+            font-family: 'Barlow', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            color: var(--text-2);
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .svc-pair {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 1px;
             background: var(--border);
             border: 1px solid var(--border);
@@ -505,7 +523,9 @@
 
         .svc-card {
             background: var(--bg-card);
-            padding: 40px 32px;
+            padding: 36px 32px;
+            display: flex;
+            flex-direction: column;
             transition: background 0.25s;
         }
 
@@ -525,31 +545,106 @@
             align-items: center;
             justify-content: center;
             color: var(--accent);
-            margin-bottom: 24px;
+            margin-bottom: 20px;
+            flex-shrink: 0;
             transition: background 0.25s, color 0.25s;
         }
 
         .svc-name {
             font-family: 'Barlow', sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             color: var(--text-1);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .svc-desc {
-            font-size: 14px;
+        .svc-tagline {
+            font-size: 13px;
             color: var(--text-2);
-            line-height: 1.65;
+            line-height: 1.6;
             margin-bottom: 20px;
         }
 
-        .svc-price {
-            font-family: 'Barlow', sans-serif;
+        .svc-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            flex: 1;
+        }
+
+        .svc-features li {
             font-size: 13px;
+            color: var(--text-2);
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            line-height: 1.4;
+        }
+
+        .svc-features li::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            min-width: 16px;
+            background: var(--accent);
+            border-radius: 50%;
+            margin-top: 1px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .svc-note {
+            font-size: 11px;
+            color: var(--text-2);
+            font-style: italic;
+            opacity: 0.65;
+            margin-bottom: 16px;
+        }
+
+        .svc-price-block {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .svc-starts {
+            font-family: 'Barlow', sans-serif;
+            font-size: 10px;
             font-weight: 700;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.12em;
+            color: var(--text-2);
+            text-transform: uppercase;
+        }
+
+        .svc-price {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 42px;
             color: var(--accent);
+            line-height: 1;
+        }
+
+        .svc-disclaimer {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-2);
+            margin-top: 36px;
+            opacity: 0.65;
+            line-height: 1.7;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 640px) {
+            .svc-pair { grid-template-columns: 1fr; }
         }
 
         /* ── ABOUT ─────────────────────────────────── */
@@ -1316,56 +1411,131 @@
             <h2 class="section-title" id="svc-title">MY <span class="red">SERVICES</span></h2>
             <p class="section-sub">From quick exterior washes to full paint corrections — a package for every vehicle and every budget.</p>
         </div>
-        <div class="services-grid">
-            <div class="svc-card fade">
-                <div class="svc-icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <!-- EXTERIOR PACKAGES -->
+        <div class="svc-group">
+            <div class="svc-group-label"><span class="red">Exterior</span> Packages</div>
+            <div class="svc-pair">
+                <div class="svc-card fade">
+                    <div class="svc-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2l2-4h8l2 4h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <div class="svc-name">Mini Detail</div>
+                    <div class="svc-tagline">A comprehensive and thorough detail to enhance the appearance of your vehicle.</div>
+                    <ul class="svc-features">
+                        <li>Foam hand wash and dry</li>
+                        <li>Tire and wheel cleaning</li>
+                        <li>Tires and plastics dressed</li>
+                        <li>1–2 month ceramic detail spray</li>
+                    </ul>
+                    <div class="svc-price-block">
+                        <span class="svc-starts">Starts at</span>
+                        <span class="svc-price">$75</span>
+                    </div>
                 </div>
-                <div class="svc-name">Exterior Detail</div>
-                <div class="svc-desc">Hand wash, clay bar treatment, paint decontamination, tire dressing, and exterior glass cleaning. Your paint will gleam.</div>
-                <div class="svc-price">Starting at $75</div>
-            </div>
-            <div class="svc-card fade">
-                <div class="svc-icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                <div class="svc-card fade">
+                    <div class="svc-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41l-7.59-7.59a2.41 2.41 0 0 0-3.41 0Z"/></svg>
+                    </div>
+                    <div class="svc-name">Signature Detail</div>
+                    <div class="svc-tagline">Multi-stage decontamination wash with added protection. Clean. Shine. Protect.</div>
+                    <ul class="svc-features">
+                        <li>Foam decontamination wash</li>
+                        <li>Clay bar treatment</li>
+                        <li>Wheels/tires cleaned and dressed</li>
+                        <li>6–9 month ceramic sealant protection</li>
+                    </ul>
+                    <div class="svc-price-block">
+                        <span class="svc-starts">Starts at</span>
+                        <span class="svc-price">$175</span>
+                    </div>
                 </div>
-                <div class="svc-name">Interior Detail</div>
-                <div class="svc-desc">Deep vacuum, steam cleaning, leather conditioning, dashboard detailing, and odor elimination. Fresh-cabin feeling.</div>
-                <div class="svc-price">Starting at $100</div>
-            </div>
-            <div class="svc-card fade">
-                <div class="svc-icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <div class="svc-name">Full Detail Package</div>
-                <div class="svc-desc">The complete treatment — interior and exterior combined for a total transformation. My most popular package.</div>
-                <div class="svc-price">Starting at $150</div>
-            </div>
-            <div class="svc-card fade">
-                <div class="svc-icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                </div>
-                <div class="svc-name">Paint Correction</div>
-                <div class="svc-desc">Remove swirl marks, water spots, and light scratches. Machine polishing restores depth and clarity to your paint.</div>
-                <div class="svc-price">Starting at $250</div>
-            </div>
-            <div class="svc-card fade">
-                <div class="svc-icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <div class="svc-name">Ceramic Coating</div>
-                <div class="svc-desc">Long-lasting nano-ceramic protection repelling water, UV rays, and contaminants. Up to 3 years of protection.</div>
-                <div class="svc-price">Starting at $500</div>
-            </div>
-            <div class="svc-card fade">
-                <div class="svc-icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                </div>
-                <div class="svc-name">Engine Bay Cleaning</div>
-                <div class="svc-desc">Safe degreasing and detailing of the engine bay. Removes grime buildup, leaves your engine looking showroom-ready.</div>
-                <div class="svc-price">Starting at $80</div>
             </div>
         </div>
+
+        <!-- INTERIOR PACKAGES -->
+        <div class="svc-group">
+            <div class="svc-group-label"><span class="red">Interior</span> Packages</div>
+            <div class="svc-pair">
+                <div class="svc-card fade">
+                    <div class="svc-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2l2-4h8l2 4h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    </div>
+                    <div class="svc-name">Express Detail</div>
+                    <div class="svc-tagline">A solid refresh of your vehicle's interior. Something to look forward to when you open the door!</div>
+                    <ul class="svc-features">
+                        <li>Full vacuum</li>
+                        <li>Interior wipedown</li>
+                        <li>Windows cleaned</li>
+                        <li>Leather/vinyl conditioned</li>
+                    </ul>
+                    <div class="svc-price-block">
+                        <span class="svc-starts">Starts at</span>
+                        <span class="svc-price">$100</span>
+                    </div>
+                </div>
+                <div class="svc-card fade">
+                    <div class="svc-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41l-7.59-7.59a2.41 2.41 0 0 0-3.41 0Z"/></svg>
+                    </div>
+                    <div class="svc-name">Reset Detail</div>
+                    <div class="svc-tagline">Get the new-car feeling again. Remove stains, grime, and odors that bother you.</div>
+                    <ul class="svc-features">
+                        <li>Full vacuum</li>
+                        <li>Interior wipedown</li>
+                        <li>Windows cleaned</li>
+                        <li>Leather/vinyl conditioned</li>
+                        <li>Upholstery shampooing</li>
+                    </ul>
+                    <div class="svc-price-block">
+                        <span class="svc-starts">Starts at</span>
+                        <span class="svc-price">$200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERAMIC COATINGS -->
+        <div class="svc-group" style="margin-bottom:0;">
+            <div class="svc-group-label"><span class="red">Ceramic</span> Coatings</div>
+            <div class="svc-pair">
+                <div class="svc-card fade">
+                    <div class="svc-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="svc-name">2 Year Ceramic Coating</div>
+                    <div class="svc-tagline">Long-term protection from UV rays, bug and water etching. Slick to the touch to repel water and dirt.</div>
+                    <ul class="svc-features">
+                        <li>Full decontamination wash</li>
+                        <li>Clay bar treatment</li>
+                        <li>Panel prep and application</li>
+                    </ul>
+                    <div class="svc-note">* Does not include paint correction</div>
+                    <div class="svc-price-block">
+                        <span class="svc-starts">Starts at</span>
+                        <span class="svc-price">$325</span>
+                    </div>
+                </div>
+                <div class="svc-card fade">
+                    <div class="svc-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4l2 2"/></svg>
+                    </div>
+                    <div class="svc-name">Armour Pro Quartz 5 Year</div>
+                    <div class="svc-tagline">Top of the line pro grade coating to take your vehicle's protection to the next level.</div>
+                    <ul class="svc-features">
+                        <li>Full decontamination wash</li>
+                        <li>Clay bar treatment</li>
+                        <li>Panel prep and application</li>
+                    </ul>
+                    <div class="svc-note">* Does not include paint correction</div>
+                    <div class="svc-price-block">
+                        <span class="svc-starts">Starts at</span>
+                        <span class="svc-price">$800</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="svc-disclaimer">* Starting prices vary by vehicle size and condition &nbsp;·&nbsp; Pet hair and excess trash are an additional fee &nbsp;·&nbsp; Please remove all belongings prior to service &nbsp;·&nbsp; Prices listed are before tax</p>
     </div>
 </section>
 
@@ -1661,7 +1831,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="f-phone">Phone Number</label>
-                            <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel">
+                            <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
                         </div>
                         <div class="form-group">
                             <label for="f-email">Email Address</label>
@@ -1700,28 +1870,28 @@
                         <label>Services Requested <span style="color:var(--accent);letter-spacing:0">*</span></label>
                         <div class="check-grid">
                             <label class="check-item">
-                                <input type="checkbox" name="svc_exterior" value="Exterior Detail">
-                                <span>Exterior Detail</span>
+                                <input type="checkbox" name="svc_mini" value="Mini Detail ($75+)">
+                                <span>Mini Detail</span>
                             </label>
                             <label class="check-item">
-                                <input type="checkbox" name="svc_interior" value="Interior Detail">
-                                <span>Interior Detail</span>
+                                <input type="checkbox" name="svc_signature" value="Signature Detail ($175+)">
+                                <span>Signature Detail</span>
                             </label>
                             <label class="check-item">
-                                <input type="checkbox" name="svc_full" value="Full Detail Package">
-                                <span>Full Detail Package</span>
+                                <input type="checkbox" name="svc_express" value="Express Detail ($100+)">
+                                <span>Express Detail</span>
                             </label>
                             <label class="check-item">
-                                <input type="checkbox" name="svc_paint" value="Paint Correction">
-                                <span>Paint Correction</span>
+                                <input type="checkbox" name="svc_reset" value="Reset Detail ($200+)">
+                                <span>Reset Detail</span>
                             </label>
                             <label class="check-item">
-                                <input type="checkbox" name="svc_ceramic" value="Ceramic Coating">
-                                <span>Ceramic Coating</span>
+                                <input type="checkbox" name="svc_ceramic2yr" value="2 Year Ceramic Coating ($325+)">
+                                <span>2 Year Ceramic</span>
                             </label>
                             <label class="check-item">
-                                <input type="checkbox" name="svc_engine" value="Engine Bay Cleaning">
-                                <span>Engine Bay Cleaning</span>
+                                <input type="checkbox" name="svc_armour" value="Armour Pro Quartz 5 Year ($800+)">
+                                <span>Armour Pro Quartz 5yr</span>
                             </label>
                         </div>
                         <input type="hidden" id="f-services" name="services" value="">
