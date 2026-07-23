@@ -51,9 +51,7 @@
       }
     }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>emailjs.init({ publicKey: 'y4Sz39EVRexVd2kSt' });</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -1070,142 +1068,115 @@
             color: var(--accent);
         }
 
-        /* Form */
-        .form {
+        /* Booking Block */
+        .booking-block {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 44px 40px;
             display: flex;
             flex-direction: column;
-            gap: 0;
+            gap: 28px;
         }
 
-        .form-section {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            padding: 24px 0;
-            border-top: 1px solid var(--border);
-        }
-
-        .form-section:first-child { border-top: none; padding-top: 0; }
-
-        .form-section-label {
-            font-family: 'Barlow', sans-serif;
+        .booking-block-eyebrow {
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 0.18em;
             text-transform: uppercase;
-            color: var(--accent);
+            color: var(--text-3);
+            margin-bottom: 8px;
+            display: block;
         }
 
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
+        .booking-block-title {
+            font-family: 'Barlow', sans-serif;
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--text-1);
+            line-height: 1.2;
+            margin-bottom: 10px;
         }
 
-        .form-row-3 { grid-template-columns: 2fr 1fr 1fr; }
+        .booking-block-sub {
+            font-size: 14px;
+            color: var(--text-2);
+            line-height: 1.65;
+        }
 
-        .form-group {
+        .booking-divider {
             display: flex;
-            flex-direction: column;
-            gap: 7px;
-        }
-
-        .form-group label {
+            align-items: center;
+            gap: 12px;
+            color: var(--text-3);
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: var(--text-3);
         }
 
-        /* Card-style checkboxes and radios */
-        .check-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+        .booking-divider::before,
+        .booking-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
         }
 
-        .check-item {
+        .booking-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .booking-contact-item {
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding: 11px 14px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            gap: 16px;
+            padding: 16px 18px;
             border-radius: var(--radius);
-            cursor: pointer;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            color: inherit;
             transition: border-color 0.2s, background 0.2s;
         }
 
-        .check-item:hover {
-            border-color: var(--accent-mid);
-            background: #1c1c1c;
-        }
-
-        .check-item:has(input:checked) {
+        .booking-contact-item:hover {
             border-color: var(--accent-mid);
             background: var(--accent-dim);
         }
 
-        .check-item:has(input:checked) span { color: var(--text-1); }
-
-        .check-item input[type="checkbox"],
-        .check-item input[type="radio"] {
-            width: 15px;
-            height: 15px;
-            accent-color: var(--accent);
-            cursor: pointer;
-            flex-shrink: 0;
-            background: none;
-            border: none;
-            padding: 0;
-        }
-
-        .check-item span {
-            font-size: 14px;
-            color: var(--text-2);
-            line-height: 1.3;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+        .booking-contact-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--accent-dim);
             border-radius: var(--radius);
-            padding: 13px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            flex-shrink: 0;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .booking-contact-item:hover .booking-contact-icon {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .booking-contact-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-3);
+            margin-bottom: 3px;
+        }
+
+        .booking-contact-value {
+            font-size: 17px;
+            font-weight: 600;
             color: var(--text-1);
-            font-family: 'Inter', sans-serif;
-            font-size: 15px;
-            outline: none;
-            transition: border-color 0.2s, background 0.2s;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-
-        .form-group select {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 14px center;
-            padding-right: 40px;
-            cursor: pointer;
-        }
-
-        .form-group select option { background: #1a1a1a; }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            border-color: var(--accent);
-            background: #1b1b1b;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder { color: var(--text-3); }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
         }
 
         /* ── FOOTER ────────────────────────────────── */
@@ -1335,7 +1306,7 @@
     <a href="#about"     onclick="closeMob()">About</a>
     <a href="#reviews"   onclick="closeMob()">Reviews</a>
     <a href="#contact"   onclick="closeMob()">Contact</a>
-    <a href="#contact"   onclick="closeMob()" class="btn btn-red" style="margin-top:8px">Get a Free Quote</a>
+    <a href="https://clienthub.getjobber.com/hubs/bdaf69bf-11e7-41ad-b647-0b5f65d964bc/public/requests/1398932/new" class="btn btn-red" style="margin-top:8px" target="_blank" rel="noopener noreferrer" onclick="closeMob()">Get a Free Quote</a>
 </div>
 
 <!-- ── NAV ───────────────────────────────────────── -->
@@ -1350,7 +1321,7 @@
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="btn btn-red nav-cta-btn">Get a Free Quote</a>
+        <a href="https://clienthub.getjobber.com/hubs/bdaf69bf-11e7-41ad-b647-0b5f65d964bc/public/requests/1398932/new" class="btn btn-red nav-cta-btn" target="_blank" rel="noopener noreferrer">Get a Free Quote</a>
         <button class="hamburger" onclick="toggleMob()" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
@@ -1375,7 +1346,7 @@
         </h1>
         <p class="hero-sub">Serving Cedar Rapids, Iowa City, and The Corridor. Professional detailing that restores, protects, and transforms your vehicle — I treat every car like it's my own.</p>
         <div class="hero-actions">
-            <a href="#contact" class="btn btn-red nav-cta-btn">
+            <a href="https://clienthub.getjobber.com/hubs/bdaf69bf-11e7-41ad-b647-0b5f65d964bc/public/requests/1398932/new" class="btn btn-red nav-cta-btn" target="_blank" rel="noopener noreferrer">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
                 Book Now
             </a>
@@ -1747,7 +1718,7 @@
                 <div class="cta-band-title">READY FOR A<br>TRANSFORMATION?</div>
                 <div class="cta-band-sub">Get a free quote — no commitment, no pressure.</div>
             </div>
-            <a href="#contact" class="btn btn-white">
+            <a href="https://clienthub.getjobber.com/hubs/bdaf69bf-11e7-41ad-b647-0b5f65d964bc/public/requests/1398932/new" class="btn btn-white" target="_blank" rel="noopener noreferrer">
                 Get Your Free Quote
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -1813,148 +1784,50 @@
                 </div>
             </div>
 
-            <form class="form" id="quoteForm" novalidate>
-
-                <!-- CONTACT DETAILS -->
-                <div class="form-section">
-                    <div class="form-section-label">Contact Details</div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="f-fname">First Name</label>
-                            <input type="text" id="f-fname" name="first_name" placeholder="John" required autocomplete="given-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="f-lname">Last Name</label>
-                            <input type="text" id="f-lname" name="last_name" placeholder="Smith" required autocomplete="family-name">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="f-phone">Phone Number</label>
-                            <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
-                        </div>
-                        <div class="form-group">
-                            <label for="f-email">Email Address</label>
-                            <input type="email" id="f-email" name="email" placeholder="john@example.com" required autocomplete="email">
-                        </div>
-                    </div>
+            <div class="booking-block">
+                <div>
+                    <span class="booking-block-eyebrow">Ready to Book?</span>
+                    <div class="booking-block-title">Request a Free Quote</div>
+                    <p class="booking-block-sub">Book directly through Carter's scheduling system — fill out a quick request and he'll get back to you to confirm your appointment.</p>
                 </div>
 
-                <!-- SERVICE LOCATION -->
-                <div class="form-section">
-                    <div class="form-section-label">Service Location</div>
-                    <div class="form-group">
-                        <label for="f-address">Street Address</label>
-                        <input type="text" id="f-address" name="address" placeholder="123 Main St" autocomplete="street-address">
-                    </div>
-                    <div class="form-row form-row-3">
-                        <div class="form-group">
-                            <label for="f-city">City</label>
-                            <input type="text" id="f-city" name="city" placeholder="Cedar Rapids" autocomplete="address-level2">
-                        </div>
-                        <div class="form-group">
-                            <label for="f-state">State</label>
-                            <input type="text" id="f-state" name="state" placeholder="IA" autocomplete="address-level1" maxlength="2">
-                        </div>
-                        <div class="form-group">
-                            <label for="f-zip">ZIP</label>
-                            <input type="text" id="f-zip" name="zip" placeholder="52401" autocomplete="postal-code" maxlength="5">
-                        </div>
-                    </div>
-                </div>
+                <a href="https://clienthub.getjobber.com/hubs/bdaf69bf-11e7-41ad-b647-0b5f65d964bc/public/requests/1398932/new" class="btn btn-red nav-cta-btn" target="_blank" rel="noopener noreferrer" style="justify-content:center;font-size:15px;padding:20px 32px;letter-spacing:0.12em;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                    Request a Free Quote
+                </a>
 
-                <!-- SERVICE DETAILS -->
-                <div class="form-section">
-                    <div class="form-section-label">Service Details</div>
-                    <div class="form-group">
-                        <label>Services Requested <span style="color:var(--accent);letter-spacing:0">*</span></label>
-                        <div class="check-grid">
-                            <label class="check-item">
-                                <input type="checkbox" name="svc_mini" value="Mini Detail ($75+)">
-                                <span>Mini Detail</span>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" name="svc_signature" value="Signature Detail ($175+)">
-                                <span>Signature Detail</span>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" name="svc_express" value="Express Detail ($100+)">
-                                <span>Express Detail</span>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" name="svc_reset" value="Reset Detail ($200+)">
-                                <span>Reset Detail</span>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" name="svc_ceramic2yr" value="2 Year Ceramic Coating ($325+)">
-                                <span>2 Year Ceramic</span>
-                            </label>
-                            <label class="check-item">
-                                <input type="checkbox" name="svc_armour" value="Armour Pro Quartz 5 Year ($800+)">
-                                <span>Armour Pro Quartz 5yr</span>
-                            </label>
-                        </div>
-                        <input type="hidden" id="f-services" name="services" value="">
-                    </div>
-                    <div class="form-group">
-                        <label for="f-vehicle">Your Vehicle (Year, Make, Model, Color)</label>
-                        <input type="text" id="f-vehicle" name="vehicle" placeholder="e.g. 2021 Honda Accord — Black">
-                    </div>
-                </div>
+                <div class="booking-divider">or reach out directly</div>
 
-                <!-- QUICK QUESTIONS -->
-                <div class="form-section">
-                    <div class="form-section-label">A Few Quick Questions</div>
-                    <div class="form-group">
-                        <label>Has your vehicle been detailed before?</label>
-                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                            <label class="check-item" style="flex:1;min-width:80px;">
-                                <input type="radio" name="detailed_before" value="Yes">
-                                <span>Yes</span>
-                            </label>
-                            <label class="check-item" style="flex:1;min-width:80px;">
-                                <input type="radio" name="detailed_before" value="No">
-                                <span>No</span>
-                            </label>
+                <div class="booking-contacts">
+                    <a href="tel:+13193826520" class="booking-contact-item">
+                        <div class="booking-contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12 19.79 19.79 0 0 1 1.14 3.36 2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label>For mobile service — water &amp; electric access at location?</label>
-                        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                            <label class="check-item" style="flex:1;min-width:80px;">
-                                <input type="radio" name="water_electric" value="Yes">
-                                <span>Yes</span>
-                            </label>
-                            <label class="check-item" style="flex:1;min-width:80px;">
-                                <input type="radio" name="water_electric" value="No">
-                                <span>No</span>
-                            </label>
-                            <label class="check-item" style="flex:2;min-width:180px;">
-                                <input type="radio" name="water_electric" value="I'll bring my vehicle to you">
-                                <span>I'll bring my vehicle to you</span>
-                            </label>
+                        <div>
+                            <div class="booking-contact-label">Call or Text</div>
+                            <div class="booking-contact-value">(319) 382-6520</div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="mailto:carterkrall@gmail.com" class="booking-contact-item">
+                        <div class="booking-contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <div class="booking-contact-label">Email</div>
+                            <div class="booking-contact-value">carterkrall@gmail.com</div>
+                        </div>
+                    </a>
+                    <a href="https://m.me/KrallysDetailing" class="booking-contact-item" target="_blank" rel="noopener noreferrer">
+                        <div class="booking-contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </div>
+                        <div>
+                            <div class="booking-contact-label">Facebook</div>
+                            <div class="booking-contact-value">Message on Facebook</div>
+                        </div>
+                    </a>
                 </div>
-
-                <!-- SCHEDULING & NOTES -->
-                <div class="form-section">
-                    <div class="form-section-label">Scheduling &amp; Notes</div>
-                    <div class="form-group">
-                        <label for="f-timing">When were you hoping to get this done?</label>
-                        <input type="text" id="f-timing" name="timing" placeholder="e.g. This weekend, ASAP, Next week…">
-                    </div>
-                    <div class="form-group">
-                        <label for="f-msg">Additional Notes or Specific Concerns</label>
-                        <textarea id="f-msg" name="message" placeholder="List any specific requests, problem areas, or concerns about your vehicle…"></textarea>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-red" id="submitBtn" style="justify-content:center;margin-top:8px;">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                    Send Quote Request
-                </button>
-            </form>
+            </div>
         </div>
     </div>
 </section>
@@ -1971,11 +1844,11 @@
             <div class="footer-col">
                 <h4>Services</h4>
                 <ul class="footer-links">
-                    <li><a href="#services">Exterior Detail</a></li>
-                    <li><a href="#services">Interior Detail</a></li>
-                    <li><a href="#services">Full Detail Package</a></li>
-                    <li><a href="#services">Paint Correction</a></li>
-                    <li><a href="#services">Ceramic Coating</a></li>
+                    <li><a href="#services">Mini Detail</a></li>
+                    <li><a href="#services">Signature Detail</a></li>
+                    <li><a href="#services">Express Detail</a></li>
+                    <li><a href="#services">Reset Detail</a></li>
+                    <li><a href="#services">Ceramic Coatings</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -1992,7 +1865,7 @@
                 <ul class="footer-links">
                     <li><a href="https://www.facebook.com/KrallysDetailing" target="_blank" rel="noopener">Facebook</a></li>
                     <li><a href="https://www.krallysdetailing.com" target="_blank" rel="noopener">Website</a></li>
-                    <li><a href="#contact">Get a Quote</a></li>
+                    <li><a href="https://clienthub.getjobber.com/hubs/bdaf69bf-11e7-41ad-b647-0b5f65d964bc/public/requests/1398932/new" target="_blank" rel="noopener noreferrer">Get a Quote</a></li>
                 </ul>
             </div>
         </div>
@@ -2056,42 +1929,6 @@ document.querySelectorAll('[data-slider]').forEach(slider => {
     window.addEventListener('touchend',   () => { active = false; });
 });
 
-/* ── CONTACT FORM ─────────────────────────── */
-document.getElementById('quoteForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submitBtn');
-    const sendIcon = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>`;
-    const checkIcon = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>`;
-
-    /* Collect checked services into the hidden field */
-    const checked = [...this.querySelectorAll('input[name^="svc_"]:checked')].map(cb => cb.value);
-    document.getElementById('f-services').value = checked.length ? checked.join(', ') : 'None selected';
-
-    btn.innerHTML = `${sendIcon} Sending…`;
-    btn.disabled = true;
-
-    emailjs.sendForm('service_4195eqc', 'template_nad5fbl', this)
-        .then(() => {
-            btn.innerHTML = `${checkIcon} Request Sent!`;
-            btn.style.background = '#16a34a';
-            setTimeout(() => {
-                btn.innerHTML = `${sendIcon} Send Quote Request`;
-                btn.style.background = '';
-                btn.disabled = false;
-                this.reset();
-            }, 4000);
-        })
-        .catch((err) => {
-            console.error('EmailJS error:', err);
-            btn.innerHTML = `${sendIcon} Failed — Try Again`;
-            btn.style.background = '#dc2626';
-            btn.disabled = false;
-            setTimeout(() => {
-                btn.innerHTML = `${sendIcon} Send Quote Request`;
-                btn.style.background = '';
-            }, 4000);
-        });
-});
 </script>
 </body>
 </html>
